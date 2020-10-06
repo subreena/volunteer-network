@@ -1,38 +1,124 @@
-.App {
+.home{
+  background-image: url(./images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 10px;
+  background-position: center center;
+  position: relative;
+
+}
+
+.home-content{
+  padding: 10px 10px 120px 10px;
+}
+.home::before{
+  content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.home-title{
+  padding: 20px 10px;
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+  text-transform: uppercase;
+}
+.task-card{
+  margin-top: -100px;
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+
+  
+}
+.card{
+  border-radius: 10px;
+  border-color: transparent;
+  margin-bottom: 15px;
+  height: 320px;
+  position: relative;
+}
+.card-body{
   text-align: center;
+  border-radius: 0px 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-img-top{
+  background-position: center center;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-form{
+  background: #E5E5E5;
+  height: 100vh;
+  padding: 20px 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-form-content{
+  background: #FFFFFF;
+border: 1px solid #ABABAB;
+box-sizing: border-box;
+border-radius: 4px;
+padding: 4%;
+width: 40%;
+margin: 50px auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.social-signIn{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid #C7C7C7;
+margin: 50px auto;
+box-sizing: border-box;
+border-radius: 57px;
+font-size: 20px;
+width: 80%;
+padding: 15px;
+}
+.social-signIn p{
+  margin-bottom: 0rem;
+}
+@media screen and (max-width: 768px){
+  .login-form-content{
+    width: 80%;
+  }
+}
+.form{
+  width: 95%;
+  margin: 5px auto;
+}
+.form-group>input{
+  width: 100%;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 20px;
+   color: #000;
+   border: 0;
+   border-bottom: 1px solid #c5c5c5;
+   border-radius: 0;
+   padding-left: 0;
+   height: 45px;
+}
+.card:hover{
+  box-shadow: 0px 0px 6px 0px black;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.img-card{
+  max-width: 540px;
+   max-height: 250px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
